@@ -1,0 +1,27 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+    height: 600px;
+}
+
+.image-container img {
+    height: stretch;
+    margin: 10px;
+}
+
+.about-container {
+    margin: auto 30px;
+}
+
+.quote-card {
+    border-left: solid #f7941c;
+    background: linear-gradient(to right, #d4af36 0%, white 100%);
+    border-radius: 15px;
+    width: 500px;
+    padding: 5px 30px;
+}
+
+.quote-card p {
+    font-family: Gadugi;
+}
