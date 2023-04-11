@@ -13,7 +13,15 @@
     </div>
 
     <div class="buttons">
-      <!--ADD MATERIAL UI BUTTONS HERE-->
+      <div>
+        <button mat-raised-button (click)="downloadResume()">Download Resume</button>
+        <label style="display: block;">{{clickMessage}}</label>
+      </div>
+
+      <div>
+        <button mat-raised-button routerLink="contact-me">Contact Me <mat-icon aria-hidden="true">phone</mat-icon></button>
+      </div>
+      
     </div>
   </div>
 </div>
