@@ -40,3 +40,10 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+/.vs/Portfolio/v17/.suo
+/.vs/Portfolio/FileContentIndex/write.lock
+/.vs/Portfolio/FileContentIndex/fca38daf-34f1-43ad-a276-00c007a11c37.vsidx
+/.vs/Portfolio/FileContentIndex/2c42aee2-11c7-4e7d-9e13-adb6935950d6.vsidx
+/.vs/Portfolio/FileContentIndex/b1f96eaa-f17a-4149-b373-5e96a60a0b12.vsidx
+/.vs/Portfolio/FileContentIndex/9d758eb1-123e-4360-bd12-87caaac8f7a5.vsidx
+*.vsidx
