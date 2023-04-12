@@ -1,2 +1,4 @@
 C:\Users\joshi\source\repos\Portfolio\Portfolio\obj\Debug\Portfolio.esproj.SuggestedBindingRedirects.cache
 C:\Users\joshi\source\repos\Portfolio\Portfolio\obj\Debug\Portfolio.esproj.CoreCompileInputs.cache
+C:\Users\joshi\source\repos\Portfolio\obj\Debug\Portfolio.esproj.SuggestedBindingRedirects.cache
+C:\Users\joshi\source\repos\Portfolio\obj\Debug\Portfolio.esproj.CoreCompileInputs.cache

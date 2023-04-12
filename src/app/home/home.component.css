@@ -1,9 +1,16 @@
+video {
+    position: fixed;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    z-index: -1;
+}
+
 .image-container {
     display: flex;
     justify-content: center;
-    margin-top: 1px;
+    margin-top: 150px;
     height: 600px;
-    z-index: 1;
 }
 
 .image-container img {
@@ -17,10 +24,10 @@
 
 .quote-card {
     border-left: solid #f7941c;
-    background: linear-gradient(to right, #d4af36 0%, white 100%);
+    background: linear-gradient(to right, #d4af36 0%, transparent 100%);
     border-radius: 15px;
     width: 500px;
-    padding: 10px 30px;
+    padding: 10px 150px 10px 30px;
 }
 
 .quote-card p {

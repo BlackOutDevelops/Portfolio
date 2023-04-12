@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     margin: 0px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
 html, body { height: 100%; }
