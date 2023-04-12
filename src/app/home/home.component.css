@@ -3,6 +3,7 @@
     justify-content: center;
     margin-top: 1px;
     height: 600px;
+    z-index: 1;
 }
 
 .image-container img {
