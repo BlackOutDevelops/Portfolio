@@ -31,7 +31,7 @@ import { WorkComponent } from './work/work.component';
       { path: 'hobbies', component: HobbiesComponent },
       { path: 'work', component: WorkComponent },
       { path: 'contact-me', component: ContactMeComponent }
-    ]),
+    ], { scrollPositionRestoration: 'enabled' }),
   ],
   providers: [],
   bootstrap: [AppComponent]
