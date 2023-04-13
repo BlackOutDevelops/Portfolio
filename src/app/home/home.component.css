@@ -6,19 +6,19 @@ video {
     z-index: -1;
 }
 
-.image-container {
+.image-quote-container {
     display: flex;
     justify-content: center;
     margin-top: 150px;
     height: 600px;
 }
 
-.image-container img {
+.image-quote-container img {
     height: stretch;
     margin: 10px;
 }
 
-.about-container {
+.quote-container {
     margin: auto 30px;
 }
 
