@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --main: #d4af36;
+    --accent: #f7941c;
+}
+
 body {
     margin: 0px;
     padding-top: 80px;
