@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/navbar/navbar.component';
@@ -26,6 +28,7 @@ import { WorkComponent } from './work/work.component';
     HttpClientModule,
     MatButtonModule,
     MatIconModule,
+    MatGridListModule,
     RouterModule.forRoot([
       { path: '', pathMatch: 'full', component: HomeComponent },
       { path: 'hobbies', component: HobbiesComponent },

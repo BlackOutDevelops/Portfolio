@@ -28,154 +28,131 @@
   </div>
 </div>
 
-<section class="skills">
-  <h1>Skills</h1>
+<div class="resume-container">
+  <section class="skills">
+    <h1>Skills</h1>
 
-  <div class="card">
-    <table id="skills-table" style="table-layout: fixed;">
-      <tr>
-        <th align="left" colspan="2">Programming Language</th>
-        <th align="left" colspan="2">Framework Experience</th>
-        <th align="left" colspan="3">Proficient Tools</th>
-      </tr>
-      <tr>
-        <!--Programming Languages-->
-        <td style="border-left: var(--accent) solid 4px; border-radius: 15px;">
-          C<br />
-          Java<br />
-          SQL<br />
-          Python<br />
-          C++<br />
-        </td>
-        <td style="border-right: var(--accent) solid 4px; border-radius: 15px;">
-          C#<br />
-          HTML<br />
-          CSS<br />
-          Javascript<br />
-          Kotlin for Android<br />
-        </td>
-        <!--Framework Experience-->
-        <td style="border-left: var(--accent) solid 4px; border-radius: 15px;">
-          Angular.js<br />
-          React.js<br />
-          WPF<br />
-        </td>
-        <td style="border-right: var(--accent) solid 4px; border-radius: 15px;">
-          WinForms<br />
-          .NET Framework<br />
-          .NET Core<br />
-        </td>
-        <!--Proficient Tools-->
-        <td style="border-left: var(--accent) solid 4px; border-radius: 15px;">
-          Bash<br />
-          Eclipse<br />
-          Code Composer Studio<br />
-          Visual Studio<br />
-          Atom<br />
-        </td>
-        <td>
-          Intellij IDEA<br />
-          Windows<br />
-          Ubuntu<br />
-          MobaXterm<br />
-          TortoiseSVN<br />
-        </td>
-        <td style="border-right: var(--accent) solid 4px; border-radius: 15px;">
-          SVN<br />
-          GIT<br />
-          Github<br />
-          Android Studio<br />
-          Azure DevOps<br />
-        </td>
-      </tr>
-    </table>
-  </div>
-</section>
+    <div class="card">
+      <div class="skills-container">
+        <section class="programming-languages">
+          <h3>Programming Languages</h3>
+          <div class="list-container">
+            <mat-grid-list cols="2" rowHeight="20">
+              <mat-grid-tile *ngFor="let language of programmingLanguages">
+                <div class="grid-text">{{language}}</div>
+              </mat-grid-tile>
+            </mat-grid-list>
+          </div>
+        </section>
+        <section class="framework-experience">
+          <h3>Framework Experience</h3>
+          <div class="list-container">
+            <mat-grid-list cols="2" rowHeight="20">
+              <mat-grid-tile *ngFor="let framework of frameworkExperience">
+                <div class="grid-text">{{framework}}</div>
+              </mat-grid-tile>
+            </mat-grid-list>
+          </div>
+        </section>
+        <section class="proficient-tools">
+          <h3>Framework Experience</h3>
+          <div class="list-container">
+            <mat-grid-list cols="3" rowHeight="20">
+              <mat-grid-tile *ngFor="let tool of proficientTools">
+                <div class="grid-text">{{tool}}</div>
+              </mat-grid-tile>
+            </mat-grid-list>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
 
-<section class="education-history">
-  <h1>Education History</h1>
-  
-  <div class="card">
-    <table>
-      <tr>
-        <th class="left-column">University of Central Florida</th>
-        <th class="right-column">Orlando, FL</th>
-      </tr>
-      <tr>
-        <td class="left-column">
-          Bachelor of Science in Computer Engineering<br />
-          Minor in Intelligent Robotic Systems<br />
-          GPA: 3.5<br />
-        </td>
-      </tr>
-    </table>
-  </div>
+  <section class="education-history">
+    <h1>Education History</h1>
 
-  <div class="card">
-    <table>
-      <tr>
-        <th class="left-column">Valencia College</th>
-        <th class="right-column">Kissimmee, FL</th>
-      </tr>
-      <tr>
-        <td class="left-column">
-          Associate of Science in Computer Science<br />
-          GPA: 3.4<br />
-        </td>
-      </tr>
-    </table>
-  </div>
-</section>
+    <div class="card">
+      <table>
+        <tr>
+          <th class="left-column">University of Central Florida</th>
+          <th class="right-column">Orlando, FL</th>
+        </tr>
+        <tr>
+          <td class="left-column">
+            Bachelor of Science in Computer Engineering<br />
+            Minor in Intelligent Robotic Systems<br />
+            GPA: 3.5<br />
+          </td>
+        </tr>
+      </table>
+    </div>
 
-<section class="work-history">
-  <h1>Work History</h1>
+    <div class="card">
+      <table>
+        <tr>
+          <th class="left-column">Valencia College</th>
+          <th class="right-column">Kissimmee, FL</th>
+        </tr>
+        <tr>
+          <td class="left-column">
+            Associate of Science in Computer Science<br />
+            GPA: 3.4<br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
 
-  <div class="card">
-    <table>
-      <tr>
-        <th class="left-column">Real Estate Developer</th>
-        <th class="right-column">Florida</th>
-      </tr>
-      <tr>
-        <td class="left-column">
-          12/2016-Present<br />
-        </td>
-        <td class="right-column">Self-Employed</td>
-      </tr>
-    </table>
-    <ul>
-      <li>Managed renovation projects while keeping the budget, materials, and time in consideration</li>
-      <li>Collaborated and led teams to follow through project requirements</li>
-    </ul>
-  </div>
+  <section class="work-history">
+    <h1>Work History</h1>
 
-  <div class="card">
-    <table>
-      <tr>
-        <th class="left-column">Holley Performance Parts</th>
-        <th class="right-column">Sanford, FL</th>
-      </tr>
-      <tr>
-        <td class="left-column">
-          01/2022-04/2022<br />
-        </td>
-        <td class="right-column">Paid Internship</td>
-      </tr>
-    </table>
-    <ul>
-      <li>
-        Worked on an agile team to design and create a customer facing WPF application. The application leveraged databases,
-        cloud resources, secure network connections, encryption, and user level permissions
-      </li>
-      <li>Designed new features, fixed bugs, and collaborated with a team of software engineers to achieve sprint goals</li>
-      <li>
-        Created an application to process and compare two binary files. The application attempts to locate both similarities
-        and differences and provides this information to internal end users which greatly improved their efficiency
-      </li>
-      <li>
-        Updated and re-engineered an existing WPF application to fit MVVM patterns and use multiple threads to improve
-        performance
-      </li>
-    </ul>
-  </div>
-</section>
+    <div class="card">
+      <table>
+        <tr>
+          <th class="left-column">Real Estate Developer</th>
+          <th class="right-column">Florida</th>
+        </tr>
+        <tr>
+          <td class="left-column">
+            12/2016-Present<br />
+          </td>
+          <td class="right-column">Self-Employed</td>
+        </tr>
+      </table>
+      <ul>
+        <li>Managed renovation projects while keeping the budget, materials, and time in consideration</li>
+        <li>Collaborated and led teams to follow through project requirements</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <table>
+        <tr>
+          <th class="left-column">Holley Performance Parts</th>
+          <th class="right-column">Sanford, FL</th>
+        </tr>
+        <tr>
+          <td class="left-column">
+            01/2022-04/2022<br />
+          </td>
+          <td class="right-column">Paid Internship</td>
+        </tr>
+      </table>
+      <ul>
+        <li>
+          Worked on an agile team to design and create a customer facing WPF application. The application leveraged databases,
+          cloud resources, secure network connections, encryption, and user level permissions
+        </li>
+        <li>Designed new features, fixed bugs, and collaborated with a team of software engineers to achieve sprint goals</li>
+        <li>
+          Created an application to process and compare two binary files. The application attempts to locate both similarities
+          and differences and provides this information to internal end users which greatly improved their efficiency
+        </li>
+        <li>
+          Updated and re-engineered an existing WPF application to fit MVVM patterns and use multiple threads to improve
+          performance
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>

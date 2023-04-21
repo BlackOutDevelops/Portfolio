@@ -1,19 +1,16 @@
-import { Component, Directive, HostListener } from '@angular/core';
-
-declare function changeTableSizeOnWindowResize(currentPage: HomeComponent): any;
+import { Component, Directive, HostListener, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'home',
   templateUrl: 'home.component.html',
-  styleUrls: ['home.component.css']
+  styleUrls: ['home.component.css'],
 })
 export class HomeComponent {
   clickMessage: string = "";
-
-  @HostListener('window:resize')
-  onResize(): void {
-    changeTableSizeOnWindowResize(this);
-  }
+  programmingLanguages: Array<string> = ['C', 'Java', 'SQL', 'Python', 'C++', 'C#', 'HTML', 'CSS', 'Javascript', 'Kotlin for Android'];
+  frameworkExperience: Array<string> = ['Angular.js', 'React.js', 'WPF', 'WinForms', '.NET Framework', '.NET Core'];
+  proficientTools: Array<string> = ['Bash', 'Eclipse', 'Code Composer', 'Visual Studio', 'Atom', 'Intellij IDEA', 'Windows', 'Ubuntu', 'MobaXterm', 'TortoiseSVN', 'SVN', 'GIT',
+    'Github', 'Android Studio', 'Azure DevOps'];
 
   downloadResume() {
     this.clickMessage = "Downloading Resume...";
