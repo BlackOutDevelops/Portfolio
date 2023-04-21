@@ -1,4 +1,6 @@
-import { Component, Directive } from '@angular/core';
+import { Component, Directive, HostListener } from '@angular/core';
+
+declare function changeTableSizeOnWindowResize(currentPage: HomeComponent): any;
 
 @Component({
   selector: 'home',
@@ -6,7 +8,12 @@ import { Component, Directive } from '@angular/core';
   styleUrls: ['home.component.css']
 })
 export class HomeComponent {
-  clickMessage:string = "";
+  clickMessage: string = "";
+
+  @HostListener('window:resize')
+  onResize(): void {
+    changeTableSizeOnWindowResize(this);
+  }
 
   downloadResume() {
     this.clickMessage = "Downloading Resume...";
