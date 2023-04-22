@@ -4,6 +4,16 @@
     --accent: #f7941c;
 }
 
+video {
+  position: fixed;
+  height: 100vh;
+  object-fit: cover;
+  top: 0;
+  z-index: -1;
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
 body {
     margin: 0px;
     padding-top: 80px;
