@@ -4,7 +4,7 @@ nav {
     display: flex;
     height: 80px;
     width: 100%;
-    background-color: white;
+    background-color: black;
     box-shadow: 0px 1px 5px black;
     z-index: 2;
 }
@@ -26,5 +26,5 @@ nav {
 }
 
 .links a:visited {
-    color: black;
+    color: var(--main);
 }
