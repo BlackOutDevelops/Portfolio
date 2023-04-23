@@ -1,1 +1,35 @@
-<p>This is the contact me page.</p>
+<div class="contact-container">
+  <div class="image-container">
+    [IMAGE GOES HERE]
+  </div>
+
+  <div class="user-info-container">
+    <h1>Contact Me</h1>
+
+    <div class="user-input-container">
+      <form>
+        <mat-form-field appearance="fill">
+        <mat-label>Email:</mat-label>
+        <input name="mail" matInput placeholder="pat@example.com" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Phone number:</mat-label>
+          <input matInput required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Message:</mat-label>
+          <textarea matInput
+                    cdkTextareaAutosize
+                    #autosize="cdkTextareaAutosize"
+                    cdkAutosizeMinRows="10"
+                    cdkAutosizeMaxRows="10" required></textarea>
+        </mat-form-field>
+
+        <button mat-raised-button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>

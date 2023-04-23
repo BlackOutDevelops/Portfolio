@@ -1,0 +1,55 @@
+.contact-container {
+    display: flex;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+}
+
+.image-container {
+    background-color: var(--main);
+    height: 60%;
+    width: 40%;
+}
+
+.user-info-container {
+    width: 55%;
+    float: right;
+}
+
+h1 {
+    font-family: Gadugi;
+    font-size: 80px;
+    color: var(--accent);
+    margin-bottom: 70px;
+    line-height: 100px;
+}
+
+h2 {
+  font-family: Gadugi;
+  font-weight: bold;
+  color: black;
+}
+
+.user-input-container {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    background-color: var(--main);
+    border: solid var(--accent) 4px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
