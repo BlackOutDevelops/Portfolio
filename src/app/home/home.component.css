@@ -72,7 +72,6 @@
 }
 
 .buttons button {
-    background: var(--main);
     margin: 10px 10px 10px 0px;
 }
 
@@ -97,11 +96,11 @@
 }
 
 h3 {
-    padding: 0px 18px;
+  padding: 0px 18px;
   font-family: Gadugi;
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .grid-text {

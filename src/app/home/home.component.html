@@ -14,12 +14,12 @@
 
     <div class="buttons">
       <div>
-        <button mat-raised-button (click)="downloadResume()">Download Resume</button>
-        <label style="display: block; color: white;">{{clickMessage}}</label>
+        <button mat-raised-button color="primary" (click)="downloadResume()">Download Resume</button>
+        <label style="display: block;">{{clickMessage}}</label>
       </div>
 
       <div>
-        <button mat-raised-button routerLink="contact-me">Contact Me <mat-icon aria-hidden="true">phone</mat-icon></button>
+        <button mat-raised-button color="primary" routerLink="contact-me">Contact Me <mat-icon aria-hidden="true">phone</mat-icon></button>
       </div>
     </div>
   </div>
