@@ -13,7 +13,7 @@ import { MatInputModule } from '@angular/material/input';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/navbar/navbar.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
-import { HobbiesComponent } from './hobbies/hobbies.component';
+import { ProjectsComponent } from './projects/projects.component';
 import { HomeComponent } from './home/home.component';
 import { WorkComponent } from './work/work.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,7 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     NavBarComponent,
     HomeComponent,
-    HobbiesComponent,
+    ProjectsComponent,
     WorkComponent,
     ContactMeComponent
   ],
@@ -39,7 +39,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatInputModule,
     RouterModule.forRoot([
       { path: '', pathMatch: 'full', component: HomeComponent },
-      { path: 'hobbies', component: HobbiesComponent },
+      { path: 'projects', component: ProjectsComponent },
       { path: 'work', component: WorkComponent },
       { path: 'contact-me', component: ContactMeComponent }
     ], { scrollPositionRestoration: 'enabled' }),
