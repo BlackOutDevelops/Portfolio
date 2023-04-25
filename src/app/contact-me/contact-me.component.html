@@ -7,28 +7,30 @@
     <h1>Contact Me</h1>
 
     <div class="user-input-container">
-      <form>
-        <mat-form-field appearance="fill">
-        <mat-label>Email:</mat-label>
-        <input name="mail" matInput placeholder="pat@example.com" [formControl]="email" required>
-        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline" hideRequiredMarker="true">
+          <mat-label>Email:</mat-label>
+          <input formControlName="email" matInput placeholder="pat@example.com" required>
+          <mat-error *ngIf="emailForm.controls['email'].invalid == true">{{getEmailErrorMessage()}}</mat-error>
         </mat-form-field>
 
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline" hideRequiredMarker="true">
           <mat-label>Phone number:</mat-label>
-          <input matInput required>
+          <input formControlName="phone" [(ngModel)]="phone" maxlength="12" matInput placeholder="123-456-7890" (ngModelChange)="addHyphen()" (keydown.delete)="onDelete($event)" required>
+          <mat-error *ngIf="emailForm.controls['phone'].invalid == true">{{getPhoneErrorMessage()}}</mat-error>
         </mat-form-field>
 
-        <mat-form-field>
+        <mat-form-field appearance="outline" hideRequiredMarker="true">
           <mat-label>Message:</mat-label>
-          <textarea matInput
+          <textarea formControlName="message" matInput
                     cdkTextareaAutosize
                     #autosize="cdkTextareaAutosize"
                     cdkAutosizeMinRows="10"
                     cdkAutosizeMaxRows="10" required></textarea>
+          <mat-error *ngIf="emailForm.controls['message'].invalid == true">{{getMessageErrorMessage()}}</mat-error>
         </mat-form-field>
 
-        <button mat-raised-button type="submit">Send Message</button>
+        <button mat-raised-button color="accent" type="submit">Send Message</button>
       </form>
     </div>
   </div>
