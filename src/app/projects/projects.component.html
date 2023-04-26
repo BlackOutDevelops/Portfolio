@@ -1,1 +1,14 @@
-<p>This is the hobbies page.</p>
+<div class="project-card" *ngFor="let project of projects">
+  <h3>{{project.name}}</h3>
+
+  <mat-chip-set>
+    <div *ngFor="let languages of project.languages">
+      <mat-chip>{{languages.language}}</mat-chip>
+    </div>
+  </mat-chip-set>
+
+  <div *ngFor="let description of project.description">
+    <p>{{description.paragraph}}</p>
+  </div>
+  <h4>Link to project: <a href="{{project.link}}" target="_blank">{{project.link}}</a></h4>
+</div>

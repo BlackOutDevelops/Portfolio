@@ -1,0 +1,26 @@
+.project-card {
+  background-color: var(--main);
+  width: 75%;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 20px auto;
+  border-style: none solid none solid;
+  border-color: var(--accent);
+  box-shadow: 3px 3px 5px var(--accent);
+}
+
+.project-card h3 {
+  font-size: 25px;
+  font-family: Gadugi;
+  margin: 0;
+}
+
+.project-card a {
+  font-family: Gadugi;
+}
+
+.project-card p {
+  font-family: Gadugi;
+  margin: 0px 0px 5px 0px;
+  text-indent: 40px;
+}
