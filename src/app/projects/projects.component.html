@@ -1,12 +1,17 @@
 <div class="project-card" *ngFor="let project of projects">
   <h3>{{project.name}}</h3>
 
-  <mat-chip-set>
-    <div *ngFor="let languages of project.languages">
-      <mat-chip>{{languages.language}}</mat-chip>
-    </div>
-  </mat-chip-set>
 
+  <div class="percentage-bar">
+    <section [style.width.%]="language.percentage" [style.background-color]="language.color" *ngFor="let language of project.languages">
+    </section>
+  </div>
+  <section class="language-chip-section">
+    <div class="language-chips chip-effects" [style.background-color]="language.color" *ngFor="let language of project.languages">
+      <span class="language">{{language.name}}</span><span class="percentage">{{language.percentage}}%</span>
+    </div>
+  </section>
+    
   <div *ngFor="let description of project.description">
     <p>{{description.paragraph}}</p>
   </div>

@@ -1,6 +1,6 @@
 .project-card {
   background-color: var(--main);
-  width: 75%;
+  width: 30%;
   border-radius: 15px;
   padding: 10px;
   margin: 20px auto;
@@ -23,4 +23,56 @@
   font-family: Gadugi;
   margin: 0px 0px 5px 0px;
   text-indent: 40px;
+}
+
+.language-chip-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.percentage-bar {
+    display: flex;
+    flex-direction: row;
+    height: 10px;
+    width: 100%;
+    border-radius: 30px;
+    overflow: clip;
+}
+
+.percentage-bar section {
+  height: 100%;
+  width: 100%;
+}
+
+.language-chips {
+  display: flex;
+  background-color: gray;
+  color: white;
+  border-radius: 30px;
+  min-width: fit-content;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin: 10px 0px 10px 5px;
+}
+
+.chip-effects {
+    box-shadow: 1px 1px 3px black;
+}
+
+.language {
+    font-size: 13px;
+    font-family: Gadugi;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.percentage {
+  font-size: 11px;
+  font-family: Gadugi;
+  font-style: italic;
+  font-weight: lighter;
+  margin: auto 0px auto 10px;
+  vertical-align: middle !important;
 }
