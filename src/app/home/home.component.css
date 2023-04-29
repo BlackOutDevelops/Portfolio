@@ -19,9 +19,9 @@
     .quote-card {
         width: fit-content !important;
         padding: 15px !important;
-        background-color: var(--main) !important;
+        background-color: lightgray !important;
         border-style: none solid none solid !important;
-        border-color: var(--accent) !important;
+        border-color: black !important;
     }
 
     .buttons {
@@ -40,7 +40,6 @@
 .image-quote-container {
     display: flex;
     justify-content: center;
-    margin-top: 150px;
     height: 600px;
 }
 
@@ -50,19 +49,27 @@
 }
 
 .quote-container {
-    margin: auto 30px;
+  margin: auto 30px;
+}
+
+.page-background {
+    padding: 150px 0px;
+    background-color: white;
 }
 
 .quote-card {
-    border-left: solid var(--accent);
-    background: linear-gradient(to right, var(--main) 0%, transparent 100%);
-    border-radius: 15px;
-    width: 500px;
-    padding: 10px 150px 10px 30px;
+  border: 3px solid var(--main);
+  /*border-left: solid var(--main);
+  border-top: solid var(--main);*/
+  /*background: linear-gradient(to right, lightgray 65%, transparent 100%);*/
+  border-radius: 15px;
+  width: 500px;
+  padding: 10px 150px 10px 30px;
+  box-shadow: 0px 0px 10px gray;
 }
 
 .quote-card p {
-    font-family: Gadugi;
+    font-family: 'Roboto';
     font-size: 20px;
     line-height: calc(1ex / 0.32);
 }
@@ -73,6 +80,9 @@
 
 .buttons button {
     margin: 10px 10px 10px 0px;
+    color: white !important;
+    background-color: black !important;
+    font-family: 'Bebas Neue'
 }
 
 .buttons label {
@@ -97,9 +107,10 @@
 
 h3 {
   padding: 0px 18px;
-  font-family: Gadugi;
+  font-family: 'Bebas Neue';
   font-weight: bold;
   font-size: 18px;
+  letter-spacing: 1px;
   margin: 0;
 }
 
@@ -111,18 +122,22 @@ h3 {
 }
 
 .list-container {
-  border-left: solid var(--accent) 4px;
-  border-right: solid var(--accent) 4px;
-  border-radius: 15px;
+  border-left: solid black 2px;
+  border-right: solid black 2px;
+  border-radius: 10px;
   margin: 0px 1px;
   height: 100%;
   padding: 5px;
 }
 
 .resume-container {
-    margin: 400px auto;
-    padding-bottom: 50px;
+    margin: 400px auto 0px auto;
+    padding: 30px;
     width: 75%;
+    border-radius: 15px;
+    border : 3px solid var(--main);
+    box-shadow: 1px 1px 10px gray;
+    background-color: white;
 }
 
 .education-history, .work-history {
@@ -130,20 +145,24 @@ h3 {
 }
 
 h1 {
-    font-family: Gadugi;
-    color: var(--accent);
+    font-family: 'Bebas Neue';
+    color: black;
     margin-left: 15px;
     font-weight: bold;
 }
 
 .card {
-    font-family: Gadugi;
-    background-color: var(--main);
-    border-style: none solid none solid;
-    border-color: var(--accent);
+    font-family: 'Roboto';
+    background-color: white;
     border-radius: 15px;
+    box-shadow: 1px 1px 5px gray;
     padding: 10px;
     margin-bottom: 20px;
+}
+
+.card th {
+    font-family: 'Bebas Neue';
+    font-size: 20px;
 }
 
 table {

@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root {
-    --main: #d4af36;
+  --main: #f76e66;
     --accent: #f7941c;
 }
 
@@ -27,5 +27,5 @@ body {
     background: transparent;
 }
 
-html, body { height: 100%; }
+html { height: 100%; }
 body { margin: 0; font-family: Roboto, "Gadugi", sans-serif; }

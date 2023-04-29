@@ -9,6 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatRippleModule } from '@angular/material/core';
 
 
 import { AppComponent } from './app.component';
@@ -39,6 +40,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     MatInputModule,
     MatChipsModule,
+    MatRippleModule,
     RouterModule.forRoot([
       { path: '', pathMatch: 'full', component: HomeComponent },
       { path: 'projects', component: ProjectsComponent },
