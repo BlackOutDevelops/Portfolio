@@ -1,27 +1,10 @@
 <div class="page-title">Projects</div>
+
+<section class="carousel-section">
+  <div class="carousel-header">Favorite Projects</div>
+  <carousel [favProjects]="favProjects"></carousel>
+</section>
+
 <div class="grid">
-  <div class="project-card" *ngFor="let project of projects">
-    <h3>{{project.name}}</h3>
-
-
-
-    <div class="description">
-      <div  *ngFor="let description of project.description">
-        <p>{{description.paragraph}}</p>
-      </div>
-    </div>
-    
-
-    <div class="percentage-bar">
-      <section [style.width.%]="language.percentage" [style.background-color]="language.color" *ngFor="let language of project.languages">
-      </section>
-    </div>
-    <section class="language-chip-section">
-      <div matRipple class="language-chips chip-effects" [style.background-color]="language.color" *ngFor="let language of project.languages">
-        <span class="language">{{language.name}}</span><span class="percentage">{{language.percentage}}%</span>
-      </div>
-    </section>
-
-    <h4>Link to project: <a class="links" href="{{project.link}}" target="_blank">{{project.link}}</a></h4>
-  </div>
+  <project-card [project]="project" *ngFor="let project of projects"></project-card>
 </div>

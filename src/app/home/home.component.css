@@ -9,6 +9,8 @@
 
     .image-quote-container img {
         object-fit: scale-down;
+        align-self: center;
+        width: 50%;
     }
 
     .quote-container {
@@ -44,7 +46,7 @@
 }
 
 .image-quote-container img {
-    height: stretch;
+    height: contain;
     margin: 10px;
 }
 

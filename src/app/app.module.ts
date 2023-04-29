@@ -20,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { WorkComponent } from './work/work.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
     WorkComponent,
     ContactMeComponent,
     ProjectCardComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
