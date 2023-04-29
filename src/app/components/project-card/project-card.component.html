@@ -1,0 +1,19 @@
+<h3>{{project.name}}</h3>
+
+<div class="description">
+  <div *ngFor="let description of project.description">
+    <p>{{description.paragraph}}</p>
+  </div>
+</div>
+
+<div class="percentage-bar">
+  <section [style.width.%]="language.percentage" [style.background-color]="language.color" *ngFor="let language of project.languages">
+  </section>
+</div>
+<section class="language-chip-section">
+  <div matRipple class="language-chips chip-effects" [style.background-color]="language.color" *ngFor="let language of project.languages">
+    <span class="language">{{language.name}}</span><span class="percentage">{{language.percentage}}%</span>
+  </div>
+</section>
+
+<h4>Link to project: <a class="links" href="{{project.link}}" target="_blank">{{project.link}}</a></h4>

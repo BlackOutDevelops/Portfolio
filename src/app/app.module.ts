@@ -19,6 +19,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { HomeComponent } from './home/home.component';
 import { WorkComponent } from './work/work.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     ProjectsComponent,
     WorkComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,

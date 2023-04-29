@@ -1,0 +1,106 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  background-color: white;
+  margin: 20px 25px 20px 25px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px gray;
+  overflow-wrap: anywhere;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: 'Bebas Neue';
+  margin: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+h4 {
+  font-family: 'Bebas Neue';
+  margin: 0;
+}
+
+.description p {
+  font-family: 'Roboto';
+  font-size: 20px;
+  margin: 0px 0px 5px 0px;
+  text-indent: 40px;
+  font-weight: 500;
+}
+
+.description {
+  border-radius: 0px 15px;
+  background-color: lightgray;
+  padding: 20px;
+  margin-bottom: 40px;
+  height: 100%;
+  box-shadow: 0px 1px 7px gray;
+  overflow: scroll;
+}
+
+.language-chip-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.percentage-bar {
+  display: flex;
+  flex-direction: row;
+  height: 10px;
+  width: 100%;
+  border-radius: 30px;
+  overflow: clip;
+  box-shadow: 1px 1px 3px gray;
+}
+
+.percentage-bar section {
+  height: 100%;
+}
+
+.language-chips {
+  display: flex;
+  background-color: gray;
+  color: white;
+  border-radius: 30px;
+  min-width: fit-content;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin: 10px 0px 10px 5px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.chip-effects {
+  box-shadow: 0px 1px 2px gray;
+}
+
+.language {
+  font-size: 13px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.percentage {
+  font-size: 11px;
+  font-family: Gadugi;
+  font-style: italic;
+  font-weight: lighter;
+  margin: auto 0px auto 10px;
+  vertical-align: middle !important;
+}
+
+.links {
+  text-decoration: none;
+  color: var(--main);
+}
+
+.links:hover {
+  color: black;
+}
