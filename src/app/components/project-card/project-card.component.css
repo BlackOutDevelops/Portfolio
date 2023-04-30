@@ -49,16 +49,23 @@ h4 {
 
 .percentage-bar {
   display: flex;
+  flex: none;
   flex-direction: row;
   height: 10px;
   width: 100%;
   border-radius: 30px;
-  overflow: clip;
   box-shadow: 1px 1px 3px gray;
 }
 
-.percentage-bar section {
-  height: 100%;
+.percentage-bar div {
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  height: 10px;
+}
+
+.percentage-bar div span {
+  width: 100%;
 }
 
 .language-chips {
@@ -73,6 +80,10 @@ h4 {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+}
+
+.language-chips:hover {
+  opacity: .8;
 }
 
 .chip-effects {
