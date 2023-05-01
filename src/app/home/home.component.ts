@@ -9,7 +9,7 @@ import { DataService } from '../services/data.service';
 export class HomeComponent {
   favProjects = this.dataService.favoriteProjects;
   clickMessage: string = "";
-  programmingLanguages: Array<string> = ['C', 'Java', 'SQL', 'Python', 'C++', 'C#', 'HTML', 'CSS', 'Javascript', 'Kotlin for Android'];
+  programmingLanguages: Array<string> = ['C', 'Java', 'SQL', 'Python', 'C++', 'C#', 'HTML', 'CSS', 'JavaScript', 'TypeScript', 'Kotlin for Android'];
   frameworkExperience: Array<string> = ['Angular.js', 'React.js', 'WPF', 'WinForms', '.NET Framework', '.NET Core'];
   proficientTools: Array<string> = ['Bash', 'Eclipse', 'Code Composer', 'Visual Studio', 'Atom', 'Intellij IDEA', 'Windows', 'Ubuntu', 'MobaXterm', 'TortoiseSVN', 'SVN', 'GIT',
     'Github', 'Android Studio', 'Azure DevOps'];
