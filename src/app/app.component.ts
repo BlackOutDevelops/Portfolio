@@ -8,5 +8,5 @@ import { GithubService } from '../app/services/github.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Portfolio';
+  title = 'Joshua John Frazer';
 }
