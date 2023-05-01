@@ -12,5 +12,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="src\app\components\project-card\" />
+    <Folder Include="src\assets\icons\" />
   </ItemGroup>
 </Project>
