@@ -1,102 +1,104 @@
 @media (max-width: 1250px) {
-    .image-quote-container {
-        flex-direction: column;
-        margin: 150px auto 210px auto;
-        object-fit: scale-down;
-        width: auto;
-        height: auto;
-    }
+  .image-quote-container {
+    flex-direction: column;
+    margin: 150px auto 210px auto;
+    object-fit: scale-down;
+    width: auto;
+    height: auto;
+  }
 
     .image-quote-container img {
-        object-fit: scale-down;
-        align-self: center;
-        width: 50%;
+      object-fit: scale-down;
+      align-self: center;
+      width: 50%;
     }
 
-    .quote-container {
-        margin: 0px auto !important;
-        width: 75%;
-    }
+  .quote-container {
+    margin: 0px auto !important;
+    width: 75%;
+  }
 
-    .quote-card {
-        width: fit-content !important;
-        padding: 15px !important;
-        background-color: lightgray !important;
-        border-style: none solid none solid !important;
-        border-color: black !important;
-    }
+  .quote-card {
+    width: fit-content !important;
+    padding: 15px !important;
+    background-color: lightgray !important;
+    border-style: none solid none solid !important;
+    border-color: black !important;
+  }
 
-    .buttons {
-        width: fit-content;
-    }
+  .buttons {
+    width: fit-content;
+  }
 
-    .skills-container {
-        flex-direction: column;
-    }
+  .carousel-section {
+    visibility: hidden;
+    height: 0px;
+  }
 
-    .proficient-tools {
-      width: 100% !important;
-    }
+  .skills-container {
+    flex-direction: column;
+  }
+
+  .proficient-tools {
+    width: 100% !important;
+  }
 }
 
 .image-quote-container {
-    display: flex;
-    justify-content: center;
-    height: 600px;
+  display: flex;
+  justify-content: center;
+  height: 600px;
 }
 
-.image-quote-container img {
+  .image-quote-container img {
     height: contain;
     margin: 10px;
-}
+  }
 
 .quote-container {
   margin: auto 30px;
 }
 
 .page-background {
-    padding: 150px 0px;
-    background-color: white;
+  padding: 150px 0px;
+  background-color: white;
 }
 
 .quote-card {
   border: 3px solid var(--main);
-  /*border-left: solid var(--main);
-  border-top: solid var(--main);*/
-  /*background: linear-gradient(to right, lightgray 65%, transparent 100%);*/
   border-radius: 15px;
   width: 500px;
   padding: 10px 150px 10px 30px;
   box-shadow: 0px 0px 10px gray;
 }
 
-.quote-card p {
+  .quote-card p {
     font-family: 'Roboto';
     font-size: 20px;
     line-height: calc(1ex / 0.32);
-}
+  }
 
 .buttons {
-    display: flex;
+  display: flex;
 }
 
-.buttons button {
+  .buttons button {
     margin: 10px 10px 10px 0px;
     color: white !important;
     background-color: black !important;
     font-family: 'Bebas Neue'
-}
+  }
 
-.buttons label {
+  .buttons label {
     display: inline-block;
     position: absolute;
-}
+  }
 
 .skills-container {
-    display: flex;
-    direction: ltr;
-    margin-bottom: 30px;
-    justify-content: space-evenly;
+  display: flex;
+  direction: ltr;
+  margin-bottom: 30px;
+  justify-content: space-evenly;
 }
 
 .programming-languages, .framework-experience {
@@ -117,10 +119,10 @@ h3 {
 }
 
 .grid-text {
-    position: absolute;
-    left: 0;
-    margin-left: 10px;
-    white-space: nowrap;
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
+  white-space: nowrap;
 }
 
 .list-container {
@@ -132,57 +134,67 @@ h3 {
   padding: 5px;
 }
 
+.carousel-header {
+  width: fit-content;
+  margin: 250px auto 0px auto;
+  font-family: 'Bebas Neue';
+  font-weight: 500;
+  font-size: 60px;
+  color: black;
+  text-shadow: 0px 0px 5px black;
+}
+
 .resume-container {
-    margin: 400px auto 0px auto;
-    padding: 30px;
-    width: 75%;
-    border-radius: 15px;
-    border : 3px solid var(--main);
-    box-shadow: 1px 1px 10px gray;
-    background-color: white;
+  margin: 50px auto 0px auto;
+  padding: 30px;
+  width: 75%;
+  border-radius: 15px;
+  border: 3px solid var(--main);
+  box-shadow: 1px 1px 10px gray;
+  background-color: white;
 }
 
 .education-history, .work-history {
-    margin: 0px auto;
+  margin: 0px auto;
 }
 
 h1 {
-    font-family: 'Bebas Neue';
-    color: black;
-    margin-left: 15px;
-    font-weight: bold;
+  font-family: 'Bebas Neue';
+  color: black;
+  margin-left: 15px;
+  font-weight: bold;
 }
 
 .card {
-    font-family: 'Roboto';
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 1px 1px 5px gray;
-    padding: 10px;
-    margin-bottom: 20px;
+  font-family: 'Roboto';
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px gray;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-.card th {
+  .card th {
     font-family: 'Bebas Neue';
     font-size: 20px;
-}
+  }
 
 table {
-    column-width: auto;
-    width: stretch;
+  column-width: auto;
+  width: stretch;
 }
 
 .left-column {
-    text-align: left;
-    vertical-align: top;
+  text-align: left;
+  vertical-align: top;
 }
 
 .right-column {
-    text-align: right;
-    vertical-align: top;
+  text-align: right;
+  vertical-align: top;
 }
 
 ul {
-    list-style: square;
-    padding-left: 20px;
+  list-style: square;
+  padding-left: 20px;
 }
