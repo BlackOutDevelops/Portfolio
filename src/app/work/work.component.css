@@ -1,0 +1,53 @@
+.page-title {
+  width: fit-content;
+  margin: auto;
+  font-family: 'Bebas Neue';
+  font-weight: 500;
+  font-size: 150px;
+  color: white;
+  text-shadow: 0px 0px 15px black;
+}
+
+section {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.header {
+  width: fit-content;
+  margin: 50px 20px 0px 20px;
+  font-family: 'Bebas Neue';
+  font-weight: 500;
+  font-size: 60px;
+  color: black;
+  text-shadow: 0px 0px 5px black;
+}
+
+.house-reno-card {
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.slideshows-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.house-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+  .house-container p {
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    width: 100%;
+    margin: 0px 0px 0px 20px;
+  }
+
+house-slideshow {
+  margin: 30px 0px;
+  padding: 0px 15px;
+}

@@ -843,5 +843,251 @@ export class DataService {
     },
   ]
 
-  public favoriteProjects = [ this.projects[8], this.projects[3], this.projects[0], this.projects[7], this.projects[1], this.projects[2], this.projects[4], this.projects[5], this.projects[16], this.projects[25], this.projects[27] ];
+  public favoriteProjects = [this.projects[8], this.projects[3], this.projects[0], this.projects[7], this.projects[1], this.projects[2], this.projects[4], this.projects[5], this.projects[16], this.projects[25], this.projects[27]];
+
+  public houseOneBeforeImageLocations = [
+    {
+      url: '/assets/images/houses/1st/before/Picture-9.jpg'
+    },
+    {
+      url: '/assets/images/houses/1st/before/Picture-2.jpg'
+    },
+    {
+      url: '/assets/images/houses/1st/before/Picture-3.jpg'
+    },
+    {
+      url: '/assets/images/houses/1st/before/Picture-4.jpg'
+    },
+    {
+      url: '/assets/images/houses/1st/before/Picture-5.jpg'
+    },
+    {
+      url: '/assets/images/houses/1st/before/Picture-6.jpg'
+    },
+    {
+      url: '/assets/images/houses/1st/before/Picture-7.jpg'
+    },
+    {
+      url: '/assets/images/houses/1st/before/Picture-8.jpg'
+    },
+    {
+      url: '/assets/images/houses/1st/before/Picture-1.jpg'
+    },
+  ]
+  public houseOneAfterImageLocations = [
+    {
+      url: '/assets/images/houses/1st/after/Picture-1.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-2.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-3.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-4.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-5.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-6.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-7.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-8.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-9.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-10.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-11.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-12.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-13.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-14.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-15.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-16.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-17.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-18.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-19.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-20.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-21.webp'
+    },
+    {
+      url: '/assets/images/houses/1st/after/Picture-22.webp'
+    },
+  ]
+  public houseTwoBeforeImageLocations = [
+    {
+      url: '/assets/images/houses/2nd/before/Picture-1.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-2.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-3.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-4.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-5.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-6.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-7.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-8.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-9.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-10.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-11.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-12.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-13.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-14.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-15.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-16.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-17.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-18.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-19.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-20.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-21.jpg'
+    },
+    {
+      url: '/assets/images/houses/2nd/before/Picture-22.jpg'
+    },
+  ]
+  public houseTwoAfterImageLocations = [
+    {
+      url: '/assets/images/houses/2nd/after/Picture-1.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-2.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-3.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-4.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-5.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-6.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-7.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-8.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-9.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-10.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-11.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-12.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-13.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-14.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-15.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-16.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-17.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-18.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-19.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-20.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-21.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-22.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-23.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-24.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-25.webp'
+    },
+    {
+      url: '/assets/images/houses/2nd/after/Picture-26.webp'
+    },
+  ]
 }

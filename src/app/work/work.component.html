@@ -1,1 +1,35 @@
-<p>This is the work page.</p>
+<div class="page-title">Work</div>
+
+<section class="holley">
+  <div class="header">.NET Software Engineer Intern</div>
+
+  <div class="house-reno-card">
+    
+  </div>
+</section>
+
+<section class="house-reno">
+  <div class="header">Real Estate Developer</div>
+
+  <div class="house-reno-card">
+    <div class="slideshows-container">
+      <div class="house-container">
+        <house-slideshow [title]="'House One Before'" [images]="houseOneBeforeImageLocations"></house-slideshow>
+        <house-slideshow [title]="'House One After'" [images]="houseOneAfterImageLocations"></house-slideshow>
+        <p>Bought: $100,000</p>
+        <p>Money Invested: ~$10,000</p>
+        <p>Sold For: $160,000</p>
+        <p>Profit Made: ~$50,000</p>
+      </div>
+
+      <div class="house-container">
+        <house-slideshow style="border-left: 1px solid black;" [title]="'House Two Before'" [images]="houseTwoBeforeImageLocations"></house-slideshow>
+        <house-slideshow style="border-left: 1px solid black;" [title]="'House Two After'" [images]="houseTwoAfterImageLocations"></house-slideshow>
+        <p>Bought: $187,000</p>
+        <p>Money Invested: ~$25,000</p>
+        <p>Sold For: $350,000</p>
+        <p>Profit Made: ~$138,000</p>
+      </div>
+    </div>
+  </div>
+</section>
