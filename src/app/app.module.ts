@@ -22,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SlideshowComponent } from './components/slideshow/slideshow.component';
     ContactMeComponent,
     ProjectCardComponent,
     CarouselComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
