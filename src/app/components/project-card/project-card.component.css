@@ -57,16 +57,16 @@ h4 {
   box-shadow: 1px 1px 3px gray;
 }
 
-.percentage-bar div {
-  display: flex;
-  flex: none;
-  flex-direction: row;
-  height: 10px;
-}
+  .percentage-bar div {
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    height: 10px;
+  }
 
-.percentage-bar div span {
-  width: 100%;
-}
+    .percentage-bar div span {
+      width: 100%;
+    }
 
 .language-chips {
   display: flex;
@@ -82,8 +82,35 @@ h4 {
   user-select: none; /* Standard syntax */
 }
 
+@keyframes mouseOverChip {
+  0% {
+    transform: rotateZ(4deg);
+  }
+
+  20% {
+    transform: rotateZ(0deg);
+  }
+
+  40% {
+    transform: rotateZ(-4deg);
+  }
+
+  60% {
+    transform: rotateZ(0deg);
+  }
+
+  80% {
+    transform: rotateZ(4deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
 .language-chips:hover {
   opacity: .8;
+  animation: mouseOverChip .3s ease-in forwards;
 }
 
 .chip-effects {
@@ -112,6 +139,6 @@ h4 {
   color: var(--main);
 }
 
-.links:hover {
-  color: black;
-}
+  .links:hover {
+    color: black;
+  }
