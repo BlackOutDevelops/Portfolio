@@ -7,8 +7,12 @@
 
 project-card {
   position: relative;
-  height: 500px
+  height: 500px;
 }
+
+  project-card:hover {
+    animation: unset;
+  }
 
 button {
   position: absolute;
