@@ -7,10 +7,11 @@
   display: flex;
   flex-direction: column;
   overflow: scroll;
-  background-color: white;
+  background-color: var(--main);
   margin: 20px 25px 20px 25px;
   padding: 20px;
-  box-shadow: 0px 0px 10px gray;
+  box-shadow: 0px 0px 15px white;
+  border-radius: 10px;
   overflow-wrap: anywhere;
   transition: ease-in .2s;
 }
@@ -29,11 +30,8 @@ h4 {
 }
 
 .description p {
-  font-family: 'Roboto';
-  font-size: 20px;
-  margin: 0px 0px 5px 0px;
-  text-indent: 40px;
-  font-weight: 500;
+  font-size: 18px;
+  margin: 0px 0px 25px 0px;
 }
 
 .description {
@@ -125,24 +123,20 @@ h4 {
 
 .language {
   font-size: 13px;
-  font-family: 'Roboto';
-  font-weight: bold;
   letter-spacing: 1px;
   text-shadow: 1px 1px 2px black;
 }
 
 .percentage {
   font-size: 11px;
-  font-family: Gadugi;
   font-style: italic;
-  font-weight: lighter;
   margin: auto 0px auto 10px;
   vertical-align: middle !important;
 }
 
 .links {
   text-decoration: none;
-  color: var(--main);
+  color: var(--accent);
 }
 
   .links:hover {

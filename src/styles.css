@@ -5,13 +5,23 @@
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("assets/fonts/Roboto-Regular.ttf") format('truetype');
+  font-family: "VT323";
+  src: url("assets/fonts/VT323-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("assets/fonts/Quicksand-VariableFont_wght.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("assets/fonts/Barlow-Regular.ttf") format('truetype');
 }
 
 :root {
-  --main: #f76e66;
-  --accent: #f7941c;
+  --main: #FFFFFFBB;
+  --accent: #f76e66;
 }
 
 video {
@@ -37,4 +47,4 @@ body {
 }
 
 html { height: 100%; }
-body { margin: 0; font-family: Roboto, "Gadugi", sans-serif; }
+body { margin: 0; font-family: Barlow; font-weight: 700; }

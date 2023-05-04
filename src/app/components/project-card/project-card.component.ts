@@ -12,7 +12,7 @@ export class ProjectCardComponent {
   @Input() project: any;
   @ViewChild('percentageBar')
   percentageBar!: ElementRef;
-  timer!: TimerHandle;
+  animation!: Animation;
 
   glowBar(color: string) {
     const percentageBar = this.percentageBar.nativeElement as HTMLElement;
@@ -32,13 +32,26 @@ export class ProjectCardComponent {
               colorBar.style.boxShadow = 'unset';
 
             if (colorBar.style.backgroundColor == rgbColor) {
-              colorBar.style.boxShadow = '0px 0px 20px 5px ' + rgbColor;
+              console.log('here');
 
-              clearTimeout(this.timer);
-              this.timer = setTimeout(() => {
-                if (colorBar.style.boxShadow != 'unset')
-                  colorBar.style.boxShadow = 'unset';
-              }, 3000);
+              if (this.animation != undefined)
+                this.animation.cancel();
+
+              this.animation = colorBar.animate([
+                {
+                  boxShadow: '0px 0px 20px 5px ' + rgbColor,
+                },
+                {
+                  boxShadow: '0px 0px 10px 0px ' + rgbColor,
+                },
+                {
+                  boxShadow: '0px 0px 20px 5px ' + rgbColor,
+                },
+              ],
+              {
+                duration: 1000,
+                iterations: 4,
+              });
             }
           }
         });

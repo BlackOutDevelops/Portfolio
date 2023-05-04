@@ -1,13 +1,93 @@
+@media (max-width: 750px) {
+  .links {
+    display: none !important;
+  }
+
+  .toggle-nav-button {
+    display: initial !important;
+  }
+}
+
+@media (min-width: 750px) {
+  .drop-down-links {
+    display: none !important;
+  }
+}
+
+.nav-drop-down-background {
+  position: absolute;
+  right: -15px;
+  top: -20px;
+  width: 130%;
+  height: 120%;
+  background-color: black;
+  opacity: .9;
+  filter: blur(20px);
+  z-index: -1;
+}
+
+.toggle-nav-button {
+  display: none;
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  margin: auto 30px;
+  cursor: pointer;
+}
+
+  .toggle-nav-button mat-icon {
+    color: white;
+  }
+
+.drop-down-links {
+  position: fixed;
+  flex-direction: column;
+  display: none;
+  padding: 10px;
+  overflow: clip;
+  right: 0;
+  top: 80px;
+  z-index: 3;
+}
+
+  .drop-down-links a {
+    margin: 5px 10px;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  }
+
+    .drop-down-links a:hover {
+      color: var(--accent) !important;
+    }
+
+    .drop-down-links a:visited {
+      color: white;
+    }
+
 nav {
-    position: fixed;
-    top: 0;
-    display: flex;
-    height: 80px;
-    width: 100%;
-    background-color: white;
-    z-index: 3;
-    box-shadow: 1px 1px 5px gray;
-    justify-content: space-between
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  justify-content: space-between;
+  height: 80px;
+  overflow: hidden;
+}
+
+.nav-background {
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  width: 110%;
+  height: 120%;
+  background-color: black;
+  opacity: .9;
+  filter: blur(10px);
+  z-index: -1;
 }
 
 .logo {
@@ -17,25 +97,29 @@ nav {
   text-align: center;
   margin-left: 40px;
   align-self: center;
-  color: var(--main);
+  color: var(--accent);
+  white-space: nowrap;
+  object-fit: scale-down;
+  cursor: pointer;
 }
 
 .links {
-    display: flex;
-    width: 500px;
+  display: flex;
+  width: 500px;
 }
 
-.links a:hover {
-  color: var(--main) !important;
-}
+  .links a:hover {
+    color: var(--accent) !important;
+  }
 
-.links a {
+  .links a {
     font-family: 'Bebas Neue';
     font-size: 20px;
     margin: auto;
     text-decoration: none;
-}
+    color: white;
+  }
 
-.links a:visited {
-    color: black;
-}
+    .links a:visited {
+      color: white;
+    }
