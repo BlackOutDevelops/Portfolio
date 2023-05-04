@@ -1,10 +1,7 @@
 @media (max-width: 1250px) {
   .image-quote-container {
     flex-direction: column;
-    margin: 150px auto 210px auto;
     object-fit: scale-down;
-    width: auto;
-    height: auto;
   }
 
     .image-quote-container img {
@@ -13,17 +10,13 @@
       width: 50%;
     }
 
-  .quote-container {
+  .hello-container {
     margin: 0px auto !important;
     width: 75%;
   }
 
-  .quote-card {
+  .hello-card {
     width: fit-content !important;
-    padding: 15px !important;
-    background-color: lightgray !important;
-    border-style: none solid none solid !important;
-    border-color: black !important;
   }
 
   .buttons {
@@ -42,9 +35,15 @@
   .proficient-tools {
     width: 100% !important;
   }
+
+  .resume-container {
+    width: 95% !important;
+    padding: 0 !important;
+  }
 }
 
 .image-quote-container {
+  margin: 10% auto;
   display: flex;
   justify-content: center;
   height: 600px;
@@ -55,37 +54,54 @@
     margin: 10px;
   }
 
-.quote-container {
+.hello-container {
   margin: auto 30px;
+  color: white;
 }
 
-.page-background {
-  padding: 150px 0px;
-  background-color: white;
+.hello {
+  margin: 0;
+  font-size: 70px;
+  font-family: 'Bebas Neue';
+  color: white;
 }
 
-.quote-card {
-  border: 3px solid var(--main);
-  border-radius: 15px;
-  width: 500px;
-  padding: 10px 150px 10px 30px;
-  box-shadow: 0px 0px 10px gray;
+.carousel-section {
+  margin-top: 25%;
 }
 
-  .quote-card p {
-    font-family: 'Roboto';
-    font-size: 20px;
-    line-height: calc(1ex / 0.32);
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
   }
+
+  50% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.summary {
+  font-size: 20px;
+  animation: slideIn 3s ease;
+}
 
 .buttons {
   display: flex;
+  animation: slideIn 3.5s ease;
 }
 
   .buttons button {
     margin: 10px 10px 10px 0px;
-    color: white !important;
-    background-color: black !important;
+    font-size: 15px;
+    font-weight: bold;
+    color: black !important;
+    background-color: white !important;
     font-family: 'Bebas Neue'
   }
 
@@ -140,18 +156,15 @@ h3 {
   font-family: 'Bebas Neue';
   font-weight: 500;
   font-size: 60px;
-  color: black;
+  color: white;
   text-shadow: 0px 0px 5px black;
 }
 
 .resume-container {
-  margin: 50px auto 0px auto;
+  margin: 50px auto 50px auto;
   padding: 30px;
   width: 75%;
   border-radius: 15px;
-  border: 3px solid var(--main);
-  box-shadow: 1px 1px 10px gray;
-  background-color: white;
 }
 
 .education-history, .work-history {
@@ -160,18 +173,22 @@ h3 {
 
 h1 {
   font-family: 'Bebas Neue';
-  color: black;
+  color: white;
   margin-left: 15px;
   font-weight: bold;
 }
 
+.card:hover {
+  transform: scale(1.01);
+}
+
 .card {
-  font-family: 'Roboto';
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 1px 1px 5px gray;
+  background-color: var(--main);
+  box-shadow: 1px 1px 15px white;
+  border-radius: 10px;
   padding: 10px;
   margin-bottom: 20px;
+  transition: ease-out .2s;
 }
 
   .card th {

@@ -1,5 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, NgForm, NgModel, Validators } from '@angular/forms';
 import { MatInput } from '@angular/material/input';
 import { Event } from '@angular/router';
@@ -7,10 +7,9 @@ import { Event } from '@angular/router';
 @Component({
   selector: 'contact-me',
   templateUrl: 'contact-me.component.html',
-  styleUrls: ['contact-me.component.css']
+  styleUrls: ['contact-me.component.css'],
 })
-export class ContactMeComponent implements OnInit{
-  //emailValidation = new FormControl('', [Validators.required, Validators.email]);
+export class ContactMeComponent implements OnInit {
   secretKey: string = "mqkowdyz";
   emailForm!: FormGroup;
   phone: string = '';
