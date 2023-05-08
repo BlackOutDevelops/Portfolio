@@ -58,3 +58,5 @@ Thumbs.db
 /obj/Debug/Portfolio.esproj.SuggestedBindingRedirects.cache
 /obj/Debug/Portfolio.esproj.FileListAbsolute.txt
 /obj/Debug/Portfolio.esproj.CoreCompileInputs.cache
+/src/environments/environment.development.ts
+/src/environments/environment.ts

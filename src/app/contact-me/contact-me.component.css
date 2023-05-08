@@ -8,11 +8,13 @@
     width: 95% !important;
     margin: auto;
     border: none !important;
+    float: unset !important;
   }
 
   .user-info-container {
     margin: auto;
     width: 95% !important;
+    float: unset !important;
   }
 
   .user-input-container {
@@ -29,13 +31,12 @@
 }
 
 :host {
-  display: flex;
-  height: 100vh;
 }
 
 .contact-container {
   display: flex;
-  margin: 100px auto 0px auto;
+  align-self: center;
+  margin: auto;
   width: 80%;
   justify-content: space-between;
 }
@@ -49,7 +50,6 @@
   border-color: white;
   border-radius: 10px;
   border-width: 10px;
-  height: 60%;
   width: 40%;
   color: white;
 }

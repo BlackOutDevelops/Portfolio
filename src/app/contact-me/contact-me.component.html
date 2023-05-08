@@ -28,7 +28,7 @@
     </section>
 
     <div class="user-input-container">
-      <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+      <form [formGroup]="emailForm" #formDirective="ngForm" (ngSubmit)="onSubmit(formDirective)">
         <mat-form-field class="email" appearance="outline" hideRequiredMarker="true">
           <mat-label>Email:</mat-label>
           <input formControlName="email" matInput placeholder="pat@example.com" required>

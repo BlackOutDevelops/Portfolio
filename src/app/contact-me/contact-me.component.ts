@@ -61,7 +61,7 @@ export class ContactMeComponent implements OnInit {
     }
   }
 
-  onSubmit() {
+  onSubmit(formDirective: any) {
     /*Set the url with your secretKey from formspree.io*/
     let url = "https://formspree.io/f/" + this.secretKey;
     /*Set Headers*/
@@ -89,6 +89,7 @@ export class ContactMeComponent implements OnInit {
       })
       console.log("Form Submitted!\nMessage sent:\n" + data);
       this.emailForm.reset();
+      formDirective.resetForm();
     }
     else {
       console.log("Form Not Submitted!\nPlease Fill All Fields!");

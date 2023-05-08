@@ -36,7 +36,7 @@ export class WorkComponent implements AfterViewInit {
 
     element.childNodes.forEach(child => {
       let parElement = child as HTMLParagraphElement;
-      elementHeight += parElement.clientHeight + 16;
+      elementHeight += parElement.clientHeight + 32;
       console.log(parElement.style.marginBottom);
     });
 

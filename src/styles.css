@@ -46,5 +46,10 @@ body {
     background: transparent;
 }
 
+app-root {
+  display: block;
+  height: calc(100% - 65px);
+}
+
 html { height: 100%; }
-body { margin: 0; font-family: Barlow; font-weight: 700; }
+body { margin: 0; font-family: Barlow; font-weight: 700; height: 100%;}
